@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const shoppingListContainer = document.getElementById('shoppingList');
     const clearListButton = document.getElementById('clearList');
 
-    // Function to render the shopping list.
+    // Function to render the shopping list
     const renderList = () => {
         shoppingListContainer.innerHTML = '';
         shoppingList.forEach((item, index) => {
