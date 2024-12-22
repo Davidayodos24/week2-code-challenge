@@ -46,11 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Clear list event.
+    // Clear list event
     clearListButton.addEventListener('click', () => {
-        shoppingList.length = 0;
-        saveToLocalStorage();
-        renderList();
+        if (confirm('Are you sure you want to clear the list?')) {
+            shoppingList.length = 0;
+            saveToLocalStorage();
+            renderList();
+        }
     });
 
     // Initial render
